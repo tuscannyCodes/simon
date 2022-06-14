@@ -20,33 +20,34 @@ const bottomRight = document.querySelector("#bottomright");
 const strictButton = document.querySelector("#strict");
 const onButton = document.querySelector("#on");
 const startButton = document.querySelector("#start");
+const displayCount = document.querySelector("#displayCount");
 // Variables END
 
-strictButton.addEventListener("click", (event) => {
-  if (strictButton.checked == true) {
-    strict = true;
-  } else {
-    strict = false;
-  }
-});
+// strictButton.addEventListener("click", (event) => {
+//   if (strictButton.checked == true) {
+//     strict = true;
+//   } else {
+//     strict = false;
+//   }
+// });
 
-onButton.addEventListener("click", (event) => {
-  if (onButton.checked == true) {
-    on = true;
-    turnCounter.innerHTML = "-";
-  } else {
-    on = false;
-    turnCounter.innerHTML = "";
-    clearColor();
-    clearInterval(intervalId);
-  }
-});
+// onButton.addEventListener("click", (event) => {
+//   if (onButton.checked == true) {
+//     on = true;
+//     turnCounter.innerHTML = "-";
+//   } else {
+//     on = false;
+//     turnCounter.innerHTML = "";
+//     clearColor();
+//     clearInterval(intervalId);
+//   }
+// });
 
-startButton.addEventListener("click", (event) => {
-  if (on || window.console) {
-    play();
-  }
-});
+// startButton.addEventListener("click", (event) => {
+//   if (on || window.console) {
+//     play();
+//   }
+// });
 
 function play() {
   win = false;
@@ -153,7 +154,10 @@ topLeft.addEventListener("click", (event) => {
 // working on new way to start game here
 if (isPlay == false) {
     play();
-    isPlay =true
+    displayCount.style.opacity = "100";
+    isPlay =true;
+
+
   }
 });
 
