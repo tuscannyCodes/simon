@@ -10,6 +10,8 @@ let strict = false;
 let noise = true;
 let on = false;
 let win;
+let counter =0;
+let isPlay = false;
 const turnCounter = document.querySelector("#turn");
 const topLeft = document.querySelector("#topleft");
 const topRight = document.querySelector("#topright");
@@ -55,7 +57,7 @@ function play() {
   turn = 1;
   turnCounter.innerHTML = 1;
   good = true;
-
+  counter++
   for (let i = 0; i < 20; i++) {
     order.push(Math.floor(Math.random() * 4) + 1);
   }
@@ -91,6 +93,7 @@ function one() {
   }
   noise = true;
   topLeft.style.backgroundColor = "lightGreen";
+ 
 }
 
 function two() {
@@ -136,6 +139,7 @@ function flashColor() {
 
 
 topLeft.addEventListener("click", (event) => {
+
   if (on) {
     playerOrder.push(1);
     check();
@@ -145,6 +149,11 @@ topLeft.addEventListener("click", (event) => {
         clearColor();
       }, 300);
     }
+  }
+// working on new way to start game here
+if (isPlay == false) {
+    play();
+    isPlay =true
   }
 });
 
@@ -171,6 +180,10 @@ bottomLeft.addEventListener("click", (event) => {
         clearColor();
       }, 300);
     }
+  }
+  if(isPlay == false ){
+
+    strict = true;
   }
 });
 

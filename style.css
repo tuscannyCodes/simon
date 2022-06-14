@@ -114,7 +114,7 @@ body {
   }
   
   #inner-circle {
-      /* display: none; */
+      display: none;
   position: absolute;
    
   
