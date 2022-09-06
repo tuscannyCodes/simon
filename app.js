@@ -21,8 +21,8 @@ const strictButton = document.querySelector("#strict");
 const onButton = document.querySelector("#on");
 const startButton = document.querySelector("#start");
 const displayCount = document.querySelector("#displayCount");
-
-
+const howToButton = document.querySelector(".howToButton");
+const howToPlaybackground = document.querySelector(".howToPlaybackground");
 
 const AudioContext = window.AudioContext || window.webkitAudioContext;
 const audioCtx = new AudioContext();
@@ -53,6 +53,12 @@ const audioCtx = new AudioContext();
 //     play();
 //   }
 // });
+
+function howToToggle(){
+
+howToPlaybackground.classList.toggle("hiddenClass");
+console.log("works")
+};
 
 function play() {
   win = false;

@@ -1,174 +1,195 @@
 body {
   background-color: navajowhite;
-  }
-  
-  .toggle {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  .button {
-    border-radius: 10% !important;
-    font-size: 1.5em;
-    border-style: none;
-    
-  }
-  
-  #switches {
-    position: absolute;
-    margin-left: 26px;
-    margin-top: 110px;
-  }
-  
-  .text2 {
-    position: absolute;
-    
-    margin-left: 83px;
-    margin-top: 197px;
-  }
-  
-  .text1 {
-    position: absolute;
-   
-    margin-left: 19px;
-    margin-top: 142px;
-  }
-  
-  .text1 span:last-child {
-    padding-left: 70px;
-  }
-  
-  #title {
-    
-    position: absolute;
-    font-size: 40px;
-    margin-left: 35px;
-    margin-top: 40px;
-  }
-  
-  #turn {
-    position: absolute;
-    background: burlywood;
-    color: saddlebrown;
-    font-family: courier;
-    font-size: 20px;
-    height: 30px;
-    width: 50px;
-    margin-left: 90px;
-    margin-top: 170px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 30px;
-    border-radius: 5px;
-  }
-  
-  
-  #topleft {
-    position: absolute;
-    height: 230px;
-    width: 230px;
-    border-radius: 60px ;
-    background: darkolivegreen;
-    top: 50%;
-    left: 50%;
-    margin: -250px 0px 0px -250px;
-   
-  }
-  
-  #topright {
-    position: absolute;
-    height: 230px;
-    width: 230px;
-    border-radius: 60px;
-   
-    background: indianred;
-    top: 50%;
-    left: 50%;
-    margin: -250px 0px 0px 0px;
-    
-  }
-  
-  #bottomleft {
-    position: absolute;
-    height: 230px;
-    width: 230px;
-    border-radius:60px;
-   
-    background: goldenrod;
-    top: 50%;
-    left: 50%;
-    margin: 0px -250px 0px -250px;
+}
 
-  }
-  
-  #bottomright {
-    position: absolute;
-    height: 230px;
-    width: 230px;
-    border-radius: 60px;
-   
-    background: cadetblue;
-    top: 50%;
-    left: 50%;
-    margin: 0px 0px -250px 0px;
- 
-  }
-  
-  #displayCount {
-      /* display: none; */
-      opacity: 0;
+.howToButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.howToPlaybackground {
   position: absolute;
-   
- 
-    height: 250px;
-    width: 250px;
-   
-    top: 0%;
-    left: 50%;
-    margin: -125px 0px 0px -125px;
-   transition: all .2s ease-in-out;
-    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 99vw;
+  height: 90vh;
+  background-color: rgb(49, 49, 49);
+  border-radius: 10px;
+  transition: all 2s ease;
+  visibility: hidden;
+  z-index: 2;
+}
+.howToPlayText {
+  color: navajowhite;
+  width: 50%;
+}
+.hiddenClass {
+  visibility: visible;
+  transition: 2s ease;
+}
+
+
+
+.toggle {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.button {
+  border-radius: 10% !important;
+  font-size: 1.5em;
+  border-style: none;
+}
+
+#switches {
+  position: absolute;
+  margin-left: 26px;
+  margin-top: 110px;
+}
+
+.text2 {
+  position: absolute;
+  margin-left: 83px;
+  margin-top: 197px;
+}
+
+.text1 {
+  position: absolute;
+
+  margin-left: 19px;
+  margin-top: 142px;
+}
+
+.text1 span:last-child {
+  padding-left: 70px;
+}
+
+#title {
+  position: absolute;
+  font-size: 40px;
+  margin-left: 35px;
+  margin-top: 40px;
+}
+
+#turn {
+  position: absolute;
+  background: burlywood;
+  color: saddlebrown;
+  font-family: courier;
+  font-size: 20px;
+  height: 30px;
+  width: 50px;
+  margin-left: 90px;
+  margin-top: 170px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  border-radius: 5px;
+}
+
+#topleft {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  width: 230px;
+  border-radius: 60px;
+  background: darkolivegreen;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px -250px;
+  z-index: 1;
+}
+
+#topright {
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  border-radius: 60px;
+
+  background: indianred;
+  top: 50%;
+  left: 50%;
+  margin: -250px 0px 0px 0px;
+  z-index: 1;
+}
+
+#bottomleft {
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: goldenrod;
+  top: 50%;
+  left: 50%;
+  margin: 0px -250px 0px -250px;
+  z-index: 1;
+}
+
+#bottomright {
+  position: absolute;
+  height: 230px;
+  width: 230px;
+  border-radius: 60px;
+
+  background: cadetblue;
+  top: 50%;
+  left: 50%;
+  margin: 0px 0px -250px 0px;
+  z-index: 1;
+}
+
+#displayCount {
+  /* display: none; */
+  opacity: 0;
+  position: absolute;
+
+  height: 250px;
+  width: 250px;
+
+  top: 0%;
+  left: 50%;
+  margin: -125px 0px 0px -125px;
+  transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 992px) {
+  #topleft {
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
+    margin: -150px 0px 0px -150px;
   }
-  
 
-  @media only screen and (max-width: 992px) {
-
-
-
-    #topleft {
-    
-      height: 130px;
-      width: 130px;
-      border-radius: 20px ;
-      margin: -150px 0px 0px -150px;
-     
-    }
-
-    #topright {
-      
-      height: 130px;
-      width: 130px;
-      border-radius: 20px;
-      margin: -150px 0px 0px 0px;
-      
-    }
-
-
-    #bottomleft {
-      
-      height: 130px;
-      width: 130px;
-      border-radius:20px;
-      margin: 0px -150px 0px -150px;
-  
-    }
-
-    #bottomright {
-      height: 130px;
-      width: 130px;
-      border-radius: 20px;
-      margin: 0px 0px -150px 0px;
-   
-    }
-
+  #topright {
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
+    margin: -150px 0px 0px 0px;
   }
+
+  #bottomleft {
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
+    margin: 0px -150px 0px -150px;
+  }
+
+  #bottomright {
+    height: 130px;
+    width: 130px;
+    border-radius: 20px;
+    margin: 0px 0px -150px 0px;
+  }
+}
