@@ -8,7 +8,7 @@
 
  
   <link rel="stylesheet" href="style.css">
-
+<!-- Audio Files -->
   <audio  id="clip1">
   	<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
   </audio>
@@ -21,50 +21,45 @@
   <audio id="clip4">
   	<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
   </audio>
+<!-- Audio Files -->
 </head>
 
 <body>
-<!-- buttons -->
+<!-- How To Play Button -->
 <button class="howToButton" onclick="howToToggle()">How to play</button>
-<!-- buttons -->
-<div class="howToPlaybackground">
-<h1 class="howToPlayText">How To Play:</h1>
-<p class="howToPlayText">***This game works best in Google Chrome browsers***
-  Press GREEN button to start Game. Game lasts 10 turns. 
-  If you guess wrong, you may retry guess. 
-  To turn on STRICT MODE press Yellow button THEN press GREEN button to start. 
-  In STRICT MODE if you guess wrong, you must start over from the beginning. </p>
+<!-- How To Play Button -->
 
-
+<!-- How To Play Div -->
+<div class="container">
+  <div class="howToPlaybackground">
+    <h1 class="howToPlayText">How To Play:</h1>
+    <p class="howToPlayText"><span class="importantText">This game works best in Google Chrome browsers</span>
+      <br>
+      <br>
+    Press GREEN button to start Game. Game lasts 10 turns. 
+    If you guess wrong, you may retry guess. 
+    <br>
+    <br>
+    To turn on STRICT MODE press Yellow button THEN press GREEN button to start. 
+    In STRICT MODE if you guess wrong, you must start over from the beginning. </p>
+  </div>
 </div>
+<!-- How To Play Div -->
 
-
-
-
+<!-- Simon Buttons -->
 <div id="outer-circle">
     <div id="topleft"></div>
     <div id="topright"></div>
     <div id="bottomleft"></div>
     <div id="bottomright"></div>
 </div>
+<!-- Simon Buttons -->
 
-    <!-- controls  -->
-
-    <!-- HOW TO PLAY  
-    ***This game works best in Google Chrome browsers***
-    Press GREEN button to start Game. Game lasts 10 turns. 
-    If you guess wrong, you may retry guess. 
-    To turn on STRICT MODE press Yellow button THEN press GREEN button to start. 
-    In STRICT MODE if you guess wrong, you must start over from the beginning. 
-    -->
-    <div id="displayCount">
-     
-     
-     
-      <div id="turn"></div>
-     
-    </div>
- 
+<!--Display Counter  -->
+<div id="displayCount">
+    <div id="turn"></div>
+</div>
+<!--Display Counter  -->
 
   <script  src="app.js"></script>
 

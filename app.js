@@ -23,36 +23,11 @@ const startButton = document.querySelector("#start");
 const displayCount = document.querySelector("#displayCount");
 const howToButton = document.querySelector(".howToButton");
 const howToPlaybackground = document.querySelector(".howToPlaybackground");
-
+// I added these variables to try to improve audio issues on safari
 const AudioContext = window.AudioContext || window.webkitAudioContext;
 const audioCtx = new AudioContext();
 // Variables END
 
-// strictButton.addEventListener("click", (event) => {
-//   if (strictButton.checked == true) {
-//     strict = true;
-//   } else {
-//     strict = false;
-//   }
-// });
-
-// onButton.addEventListener("click", (event) => {
-//   if (onButton.checked == true) {
-//     on = true;
-//     turnCounter.innerHTML = "-";
-//   } else {
-//     on = false;
-//     turnCounter.innerHTML = "";
-//     clearColor();
-//     clearInterval(intervalId);
-//   }
-// });
-
-// startButton.addEventListener("click", (event) => {
-//   if (on || window.console) {
-//     play();
-//   }
-// });
 
 function howToToggle(){
 
