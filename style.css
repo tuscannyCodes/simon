@@ -130,3 +130,45 @@ body {
     
   }
   
+
+  @media only screen and (max-width: 992px) {
+
+
+
+    #topleft {
+    
+      height: 130px;
+      width: 130px;
+      border-radius: 20px ;
+      margin: -150px 0px 0px -150px;
+     
+    }
+
+    #topright {
+      
+      height: 130px;
+      width: 130px;
+      border-radius: 20px;
+      margin: -150px 0px 0px 0px;
+      
+    }
+
+
+    #bottomleft {
+      
+      height: 130px;
+      width: 130px;
+      border-radius:20px;
+      margin: 0px -150px 0px -150px;
+  
+    }
+
+    #bottomright {
+      height: 130px;
+      width: 130px;
+      border-radius: 20px;
+      margin: 0px 0px -150px 0px;
+   
+    }
+
+  }

@@ -21,6 +21,11 @@ const strictButton = document.querySelector("#strict");
 const onButton = document.querySelector("#on");
 const startButton = document.querySelector("#start");
 const displayCount = document.querySelector("#displayCount");
+
+
+
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioCtx = new AudioContext();
 // Variables END
 
 // strictButton.addEventListener("click", (event) => {
